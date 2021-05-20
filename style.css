@@ -1,0 +1,617 @@
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+figcaption,
+figure,
+main {
+  display: block;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+a {
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+abbr[title] {
+  border-bottom: none;
+  text-decoration: underline;
+  text-decoration: underline dotted;
+}
+b,
+strong {
+  font-weight: inherit;
+}
+b,
+strong {
+  font-weight: bolder;
+}
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+dfn {
+  font-style: italic;
+}
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sub {
+  bottom: -0.25em;
+}
+sup {
+  top: -0.5em;
+}
+audio,
+video {
+  display: inline-block;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+img {
+  border-style: none;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+button,
+input {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+legend {
+  box-sizing: border-box;
+  color: inherit;
+  display: table;
+  max-width: 100%;
+  padding: 0;
+  white-space: normal;
+}
+progress {
+  display: inline-block;
+  vertical-align: baseline;
+}
+textarea {
+  overflow: auto;
+}
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+details,
+menu {
+  display: block;
+}
+summary {
+  display: list-item;
+}
+canvas {
+  display: inline-block;
+}
+template {
+  display: none;
+}
+[hidden] {
+  display: none;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: "";
+  clear: both;
+  height: 0;
+}
+
+html {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap; /* added line */
+}
+
+/* MY CSS STARTS NOW */
+/* THE CSS IS VERY MESSY BECAUSE I RAN OUT OF TIME FROM BOOTCAMP */
+/* CONTINUE AT YOUR OWN RISK */
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+.wrapper {
+  width: 80%;
+  margin: auto;
+}
+
+div {
+  width: 80%;
+  height: auto;
+}
+.container {
+  display: grid;
+  grid-template-rows: auto;
+  color: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 25px;
+  margin: auto;
+}
+main {
+  margin-top: 25px;
+}
+
+.innerContainer {
+  text-align: center;
+  border: 4px solid rgba(255, 255, 255, 0.5);
+  border-radius: 25px;
+  width: calc(100% / 3.5);
+  height: auto;
+  min-height: 600px;
+  max-width: 500px;
+  margin: 25px;
+  background: #393e46;
+  box-shadow: 0px 0px 25px 5px #888888;
+  margin: 25px 0px;
+}
+
+.synopsis {
+  margin: 0px 15px;
+  color: white;
+  padding-top: 20px;
+  border-bottom-right-radius: 18px;
+  border-bottom-left-radius: 18px;
+  border-top: 2px solid black;
+  text-align: center;
+}
+
+.malScore {
+  margin-top: 0px;
+  color: white;
+  text-align: center;
+}
+h1 {
+  text-transform: uppercase;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 125%;
+}
+
+body {
+  background-color: #f6f6f6;
+}
+
+div.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h2 {
+  padding: 25px;
+  color: white;
+  background-color: #364f6b;
+  margin: 0px;
+  border-top: 4px solid rgba(255, 255, 255, 0.5);
+  border-bottom: none;
+  border-top-right-radius: 18px;
+  border-top-left-radius: 18px;
+  border-bottom: 4px solid #3fc1c9;
+}
+
+header {
+  color: white;
+  background-color: #393e46;
+  display: flex;
+  border-bottom: 14px solid #00adb5;
+}
+
+.clickableObject {
+  text-decoration: none;
+}
+
+main {
+  background: url("./images/loopcss.svg"); /* made with svgator */
+  min-width: 100vw;
+  min-height: 100vh;
+}
+
+.information {
+  width: 100%;
+  padding: 1px 0px;
+  margin: auto;
+  text-align: center;
+  /* padding: 100px; */
+  background: #30e3ca;
+  color: yellow;
+}
+.information a,
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer {
+  color: white;
+  background-color: #393e46;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-top: 14px solid #00adb5;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-align: center;
+}
+/* loading gif from https://loading.io/ */
+
+.loadingDiv {
+  margin: auto;
+  text-align: center;
+  display: none;
+}
+
+.loadingDiv img {
+  height: 25%;
+  width: auto;
+}
+
+/* select CSS from https://doodlenerd.com/html-control/css-dropdown-generator */
+
+.select {
+  position: relative;
+  display: inline-block;
+  width: 200px;
+  text-align: center;
+}
+.select select {
+  text-align: center;
+  font-family: "Arial";
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+  padding: 13px 14px;
+  outline: 0;
+  border: 4px solid #000000;
+  border-radius: 40px;
+  background: #222831;
+  color: #00adb5;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+.select select::-ms-expand {
+  display: none;
+}
+.select select:hover,
+.select select:focus {
+  color: #393e46;
+  background: #eeeeee;
+}
+.select select:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+.select_arrow {
+  position: absolute;
+  top: 16px;
+  right: 22px;
+  width: 16px;
+  height: 16px;
+  border: solid #00adb5;
+  border-width: 0 4px 4px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.select select:hover ~ .select_arrow,
+.select select:focus ~ .select_arrow {
+  border-color: #000000;
+}
+.select select:disabled ~ .select_arrow {
+  border-top-color: #cccccc;
+}
+
+.select2 {
+  width: 100px;
+}
+
+#formSubmit2 {
+  background-color: #222831;
+  border-radius: 40px;
+  border: 4px solid #000000;
+  display: inline-block;
+  cursor: pointer;
+  color: #00acb5;
+  text-align: center;
+  font-family: Arial;
+  /* font-size: 17px; */
+  width: 200px;
+  padding: 13px 14px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #2f6627;
+}
+#formSubmit2:hover {
+  background-color: #eeeeee;
+}
+#formSubmit2:active {
+  position: relative;
+  top: 1px;
+}
+/* button from https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 100px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #11999e; /* Set a background color */
+  color: #30e3ca; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+@media (max-width: 1500px) {
+  .innerContainer {
+    min-height: 100px;
+    width: 300px;
+  }
+
+  .synopsis {
+    font-size: 0.75rem;
+    margin: 15px;
+  }
+
+  img {
+    max-width: 75%;
+    max-height: 75%;
+  }
+}
+
+@media (max-width: 1350px) {
+  .innerContainer {
+    width: calc(80% / 3);
+    min-height: 100px;
+    width: 300px;
+  }
+
+  div {
+    width: 90%;
+    height: auto;
+  }
+
+  .synopsis {
+    font-size: 0.75rem;
+    margin: 15px;
+  }
+
+  img {
+    max-width: 50%;
+    max-height: 50%;
+  }
+}
+
+@media (max-width: 1100px) {
+  .innerContainer {
+    width: calc(80% / 3);
+    min-height: 100px;
+    width: 300px;
+  }
+
+  div {
+    width: 90%;
+    height: auto;
+  }
+
+  .synopsis {
+    font-size: 0.75rem;
+    margin: 15px;
+  }
+
+  .innerContainer {
+    width: auto;
+    height: auto;
+  }
+  img {
+    max-height: 100%;
+    max-width: aut0;
+    max-width: auto;
+    max-width: 100%;
+  }
+}
+
+.innerContainer {
+  width: auto;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+@media (max-width: 900px) {
+  div.wrapper {
+    flex-direction: column;
+  }
+
+  #animeForm {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .innerContainer {
+    max-width: 1000px;
+  }
+
+  #animeForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  div.select:nth-child(2) {
+    margin: 10px 0px;
+  }
+
+  #totalAnimeAmount {
+    margin: 10px auto 20px auto;
+  }
+
+  div.select:nth-child(4),
+  #formSubmit2,
+  .select,
+  #animeForm {
+    width: 100%;
+  }
+}
+
+@media (max-width: 650px) {
+}
+
+/* RESOURCES: */
+
+/* https://loading.io/ */
+/* https://doodlenerd.com/html-control/css-dropdown-generator */
+/* https://www.w3schools.com/howto/howto_js_scroll_to_top.asp */
+/* https://www.svgator.com/ */

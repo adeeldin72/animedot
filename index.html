@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AnimeDot</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <button onclick="animeApp.topFunction()" id="myBtn" title="Go to top">Top</button>
+
+
+
+    <header>
+        <div class="wrapper">
+            <h1>Anime <i class="far fa-dot-circle"></i><span class="visually-hidden">DOT</span></h1>
+            <form id="animeForm" action="">
+                <label for="animeGenreType" class="visually-hidden">Genre:</label>
+                <div class="select">
+                    <select name="animeGenreType" id="animeGenreType" form="animeForm">
+                        <option value="0" disabled selected>Select your genre</option>
+                        <option value="1">Action</option>
+                        <option value="2">Adventure</option>
+                        <option value="4">Comedy</option>
+                        <option value="7">Mystery</option>
+                        <option value="8">Drama</option>
+                        <option value="10">Fantasy</option>
+                        <option value="14">Horror</option>
+                        <option value="16">Magic</option>
+                        <option value="18">Mecha</option>
+                        <option value="19">Music</option>
+                        <option value="17">Martial Arts</option>
+                        <option value="21">Samurai</option>
+                        <option value="22">Romance</option>
+                        <option value="23">School</option>
+                        <option value="24">Sci Fi</option>
+                        <option value="30">Sports</option>
+                        <option value="36">Slice Of Life</option>
+                    </select>
+                </div>
+
+                <label for="totalAnimeAmount" class="visually-hidden">Max Amount:</label>
+                <div class="select select2">
+                    <select name="totalAnimeAmount" id="totalAnimeAmount" form="animeForm">
+                        <option value="0" disabled selected>Max amount generated</option>
+                        <option value="1">50</option>
+                        <option value="2">100</option>
+                        <option value="5">250</option>
+                        <option value="10">500</option>
+                    </select>
+
+                </div>
+                <input id="formSubmit2" type="submit" value="Generate">
+            </form>
+        </div>
+
+    </header>
+
+    <div class='information'>
+        <p>Powered by <a href="https://jikan.docs.apiary.io/#">Jikan</a> an Unofficial MyAnimeList (MAL) API. This
+            website scrapes MAL and based on your chosen genre generates random choices for you to watch!</p>
+    </div>
+
+    <main class="wrapper">
+        <div class="loadingDiv"><img src="./images/spinningLoader.gif" alt=""></div>
+        <div id="mainContainer" class="container">
+
+        </div>
+    </main>
+
+    <footer>
+        <p>Created by Adeel Din from
+            <a href="junocollege.com">Juno College</a> </p>
+    </footer>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
