@@ -5,6 +5,10 @@ const animeApp = {
     position: -1,
 };
 $(function () {
+    document.querySelector('.backgroundImage').style.background = 'url("./images/loopcss.svg")'
+    document.querySelector('.backgroundImage').style.backgroundRepeat = 'no-repeat';
+    document.querySelector('.backgroundImage').style.backgroundSize = 'cover';
+
     animeApp.animeContainer = function (title, syn, url, url2, score) { //constructor object
         this.title = title,
             this.synopsis = syn,
@@ -35,7 +39,7 @@ $(function () {
                 $(".loadingDiv").hide();
             }
         }).then(function (data) {
-            console.log(data); //used for testing purposes
+            // console.log(data); //used for testing purposes
 
             for (let i = 0; i < (data["results"].length); i++) { //loop through data and take important data and create objects of each data inside animeApp.animeContainer object
                 if (data["results"][i]['title'] !== 'undefined' && data["results"][i]['rated'] !== "Rx" && data["results"][i]['rated'] !== "R+") { //if data is not broken and it is not rated mature create object

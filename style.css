@@ -345,17 +345,18 @@ main {
   /* background: size; */
 }
 .backgroundImage {
+  /* will-change: transform; */
   position: fixed;
   top: 0;
   /* right:0; */
   left: 0;
-
+  /* backface-visibility: hidden; */
+  /* perspective: 1000; */
+  /* transform: null; */
   z-index: -100;
-  background: url("./images/loopcss.svg");
+  /* background: ; */
   min-width: 100vw;
   min-height: 100vh;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .information {
