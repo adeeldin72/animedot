@@ -5,10 +5,6 @@ const animeApp = {
     position: -1,
 };
 $(function () {
-    document.querySelector('.backgroundImage').style.background = 'url("./images/loopcss.svg")'
-    document.querySelector('.backgroundImage').style.backgroundRepeat = 'no-repeat';
-    document.querySelector('.backgroundImage').style.backgroundSize = 'cover';
-
     animeApp.animeContainer = function (title, syn, url, url2, score) { //constructor object
         this.title = title,
             this.synopsis = syn,
