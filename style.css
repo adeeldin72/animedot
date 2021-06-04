@@ -346,6 +346,10 @@ main {
 }
 .backgroundImage {
   position: fixed;
+  top: 0;
+  /* right:0; */
+  left: 0;
+
   z-index: -100;
   background: url("./images/loopcss.svg");
   min-width: 100vw;
