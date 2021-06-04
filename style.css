@@ -338,9 +338,20 @@ header {
 }
 
 main {
-  background: url("./images/loopcss.svg"); /* made with svgator */
+  /* background: url("./images/loopcss.svg");  */
   min-width: 100vw;
   min-height: 100vh;
+  /* background-repeat: no-repeat; */
+  /* background: size; */
+}
+.backgroundImage {
+  position: fixed;
+  z-index: -100;
+  background: url("./images/loopcss.svg");
+  min-width: 100vw;
+  min-height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .information {
