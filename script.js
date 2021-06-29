@@ -24,10 +24,10 @@ $(function () {
                 type: "anime",
                 page: page.toString(),
                 genre: genre.toString(),
-                genre_exclude: "12",
+
 
             }, error: function (request, status, error) { //if error 404 or something else occurs try again
-                animeApp.startSearch($('#totalAnimeAmount').val(), $('#animeGenreType').val());
+                animeApp.startSearch($('#totalAnimeAmount').val(), Number($('#animeGenreType').val()));
             }, beforeSend: function () { //loading gif
                 $(".loadingDiv").show();
             },
